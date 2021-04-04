@@ -1,0 +1,15 @@
+body{
+  background-color: #bbf1fa;
+}
+
+hr{
+  background-color: #bbf1fa;
+  border-style: dotted none none;
+  border-width:3px;
+}
+
+img{
+  border-style: solid;
+  height: 150px;
+  width: 117px;
+}
