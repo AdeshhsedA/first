@@ -12,4 +12,5 @@ img{
   border-style: solid;
   height: 150px;
   width: 117px;
+  border-radius: 10%;
 }
