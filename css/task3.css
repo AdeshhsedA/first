@@ -1,0 +1,126 @@
+.wall{
+	height:300px;
+	width:300px;
+	background:url(../images/clock.png);
+	background-position:center;
+	border:3px solid;
+	position:relative;
+	z-index: 1;
+	border-top-left-radius:150px;
+	border-top-right-radius:150px;
+	border-bottom-left-radius:150px;
+	border-bottom-right-radius:150px;
+}
+
+.second{
+	height:150px;
+	width:0px;
+	border-left:1px solid white;
+	position:relative;
+	left:150px;
+	transform-origin:0% 100%;
+	animation:sec 60s linear infinite;
+
+}
+
+
+@keyframes sec{
+	100%{
+
+		transform:rotate(360deg);
+	}
+}
+
+.minute{
+	height:100px;
+	width:0px;
+	border-left:3px solid cyan;
+	position:relative;
+	left:150px;
+	top:-100px;
+	transform-origin:0% 100%;
+	animation:minu 3600s linear infinite;
+
+}
+
+@keyframes minu{
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+.hour{
+	height:50px;
+	width:0px;
+	border-left:7px solid red;
+	position:relative;
+	left:148px;
+	top:-150px;
+	transform-origin:0% 100%;
+	animation:hour 2592000s linear infinite;
+
+}
+
+
+@keyframes hour{
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+
+.pend{
+	height:350px;
+	width:200px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background:rgb(50 50 50);
+	position:relative;
+	left:53px;
+	top:-62px;
+	z-index: 0;
+}
+
+.penda{
+	height:255px;
+	width:0px;
+	border-left:3px solid white;
+	transform-origin:100% 0%;
+	transform:rotate(-15deg);
+	position:relative;
+	left:100px;
+	animation: pendmov 2s linear infinite ;
+
+}
+
+@keyframes pendmov{
+	50%{
+		transform:rotate(15deg);
+	}
+}
+
+
+.pendb{
+	height:20px;
+	width:20px;
+	background:white;
+	border:5px solid white;
+	transform-origin:0px -260px;
+	transform:rotate(-15deg);
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius:15px;
+	position:relative;
+	left:86px;
+	top:-10px;
+	animation: pendbmov 2s linear infinite;
+
+
+}
+
+@keyframes pendbmov{
+	50%{
+		transform:rotate(15deg);
+	}
+}
