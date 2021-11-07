@@ -1,102 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Adesh's Personal Site</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="logo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<title>Adesh Chaudhary | Web Developer</title>
+
 </head>
-
 <body>
-  <hr size="3" , noshade />
-  <table cellspacing="20">
-    <tr>
-      <td><img src="adesh.jpg" alt="Picture of Adesh" height="200" width="150" /></td>
-      <td>
-        <h1>Adesh Chaudhary</h1>
-        <p>
-          <em>B.Tech (CSE) student<strong> @ SLIET</strong></em>
-        </p>
-        <p>
-          I am Adesh Chaudhary. Currently I am Pursuing B.Tech in Computer Science from SLIET Longowal, Punjab.
+	<nav>
+		<h1>Adesh Chaudhary</h1>
+		<ul>
+			<li><a href="#about" class="nav-link">About</a></li>
+			<li><a href="#skills" class="nav-link">Skills</a></li>
+			<li><a href="#projects" class="nav-link">Projects</a></li>
+			<li><a href="#contact" class="nav-link" >Contact</a></li>
+		</ul>
 
-        </p>
-      </td>
-    </tr>
-  </table>
+		<button class="burger-menu" id="burger-menu">
+			<ion-icon class="bars" name="menu-outline"></ion-icon>
+		</button>
+	</nav>
+
+	<div class="svg_L">
+		<svg height="900" width="100%">
+			<filter id="Full_L">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+				<feOffset result="offOut" in="SourceGraphic" dx="5" dy="5" />
+				<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10"/>
+				<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
 
 
+			</filter>
 
-  <hr size="3" noshade>
+			<defs>
+				<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color:rgba(255,221,119,1); stop-opacity:1"/>
+					<stop offset="100%" style="stop-color: red; stop-opacity:0.5"/>
+				</linearGradient>
 
-  <!--<h3>Education:</h3>
-  <ul>
-    <li>Highschool and Intermediate from City Montessori Inter College, Balrampur.</li>
-    <li>B.Tech from SLIET, Longowal.</li>
-  </ul>-->
+			</defs>
+			<polygon points="659,62 778,308 722,308 741,354 796,354 879,554 825,554 741,354 573,354 481,554 426,554 518,353 573,354 598,308 722,308 658,170 598,308 539,308" stroke="white" stroke-width="1" stroke-linecap="round" fill="url(#grad1)" filter="url(#Full_L)" />
 
-  </p>
-
-  <h3>Education:</h3>
-  <table style="background-color: #a4ebf3;" border="1" cellspacing="2">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Year</th>
-        <th>Institue Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Highschool</td>
-        <td>2015</td>
-        <td>City Montessori Inter College</td>
-      </tr>
-      <tr>
-        <td>Intermediate</td>
-        <td>2017</td>
-        <td>City Montessori Inter College</td>
-      </tr>
-      <tr>
-        <td>B.Tech</td>
-        <td>2023</td>
-        <td>SLIET</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <table style="background-color: #a4ebf3;" border="1">
-    <thead>
-      <tr>
-        <td><h3>Skills:</h3></td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>C++ </td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>HTML  </td>
-        <td>⭐⭐</td>
-      </tr>
-      <tr>
-        <td>DSA    </td>
-        <td>⭐⭐</td>
-      </tr>
-      <tr>
-        <td>OS     </td>
-        <td>⭐</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr>
-  <a href="contact-me.html"><input type="button" style="background-color:red;" name="" value="Contact Me"></a>
-  <!--<a href="Signup-page.html"><button type="button" name="button">Sign Up</button></a>-->
-
+			<text x="500" y="650" fill="rgba(255,221,119,1)" font-size="6rem" >ADESH</text>
+			<text x="540" y="700" fill="red" font-size="2rem">Web Developer</text>
+		</svg>
+	</div>
 
 </body>
-
 </html>
