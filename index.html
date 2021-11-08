@@ -10,24 +10,25 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<title>Adesh Chaudhary | Web Developer</title>
 
+
 </head>
 <body>
 	<nav>
-		<h1>Adesh Chaudhary</h1>
+		<h1><a href="#home" class="nav-link" >Adesh Chaudhary</a></h1>
 		<ul>
 			<li><a href="#about" class="nav-link">About</a></li>
-			<li><a href="#skills" class="nav-link">Skills</a></li>
+			<li><a href="#Skills" class="nav-link">Skills</a></li>
 			<li><a href="#projects" class="nav-link">Projects</a></li>
 			<li><a href="#contact" class="nav-link" >Contact</a></li>
 		</ul>
 
 		<button class="burger-menu" id="burger-menu">
-			<ion-icon class="bars" name="menu-outline"></ion-icon>
+			<i class="material-icons">menu</i>
 		</button>
 	</nav>
 
-	<header class="svg_L">
-		<svg viewBox="0 0 1250 900">
+	<header class="svg_L" id="home">
+		<svg viewBox="0 0 1250 900" >
 			<filter id="Full_L">
 				<feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
 				<feOffset result="offOut" in="SourceGraphic" dx="5" dy="5" />
@@ -51,7 +52,7 @@
 		</svg>
 	</header>
 
-        <div id="Skills">
+	<div id="Skills">
 		<h1 class="skillHead font-effect-emboss">Skills</h1>
 		<div class="cppbox">
 			<h2 id="cpp">C++</h2>
@@ -68,7 +69,8 @@
 		
 		
 	</div>
-	
+
+
 	<script type="text/javascript">
 		const burger = document.querySelector("#burger-menu");
 		const ul = document.querySelector("nav ul");
