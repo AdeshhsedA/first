@@ -171,7 +171,7 @@ svg{
 }
 
 
-@media only screen and(max-width:900px){
+@media only screen and (max-width:900px){
 	.svg_L{
 		height:100vw;
 		max-width:100%;
@@ -184,8 +184,34 @@ svg{
 	}
 }
 
-@media only screen and(max-width:600px){
+@media only screen and (max-width:720px){
+	nav {
+		padding :1rem 0.5rem;
+	}
+
+	nav ul{
+		position:fixed;
+		background-color:var(--bg-color);
+		flex-direction:column;
+		top:60px;
+		left:40%;
+		width:60%;
+		text-align:center;
+		padding-bottom:1rem;
+		transform:translateX(120%);
+		transition:transform 0.5s ease-in;
+		
+	}
+
+	nav ul li{
+		margin:2px;
+	}
+
 	.burger-menu{
 		display:block;
+	}
+
+	nav ul.show{
+		transform:translateX(0);
 	}
 }
