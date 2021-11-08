@@ -82,8 +82,6 @@ nav a:hover{
 nav ul{
 	display:flex;
 	gap:1.9rem;
-
-
 }
 
 nav ul li{
@@ -101,14 +99,93 @@ nav ul li{
 }
 
 
+nav>button>i{
+	font-size:48px !important;
+}
+
+
+
+
+
 .svg_L{
 	background-color:navy;
-	box-shadow:0px 10px 20px navy;
+	max-width: 100vw;
+	height:70vw;
+}
+
+
+svg{
+	height:70vw;
+	width:100%;
 }
 
 
 #Skills{
-	margin-top:15px;
-	background-image:linear-gradient(to right,rgba(255,221,119,1), red );
-	box-shadow:0px -10px 20px rgba(255,221,119,1);
+	background-color: navy;
+	overflow:auto;
+	max-width:100%;
+}
+
+.skillHead{
+	background-image:linear-gradient(to bottom, navy, red);
+	color:white;
+	text-align: center;
+	font-size:8vw;
+	font-family:"Sofia",sans-serif;
+}
+
+.cppbox{
+	background-image:linear-gradient(to left, rgba(255,221,119,1),red);
+	font-size:7vw;
+	padding-left:50px;
+	color:black;
+
+}
+
+#cpp{
+	opacity: 0.5;
+}
+
+.dsabox{
+	background-image:linear-gradient(to right, rgba(255,221,119,1), rgba(10,90,234,1));
+	font-size:7vw;
+	text-align: right;
+	padding-right:50px;
+}
+
+#dsa{
+	opacity:0.5;
+}
+
+
+
+.RpFEDbox{
+	color:white;
+	background-image:linear-gradient(to right, navy, rgba(255,221,119,1));
+	font-size:4vw;
+}
+
+#RpFED{
+	width:50%;
+	opacity:0.4;
+}
+
+
+@media only screen and(max-width:900px){
+	.svg_L{
+		height:100vw;
+		max-width:100%;
+		border:hidden;
+	}
+	svg{
+		height:100vw;
+		width:100%;
+		border:hidden;
+	}
+}
+
+@media only screen and(max-width:600px){
+	.burger-menu{
+		display:block;
+	}
 }
