@@ -119,55 +119,126 @@ svg{
 	width:100%;
 }
 
+.me{
+	display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 2.5rem;
+    max-width: 100%;
+    margin: auto;
+    padding:2.5rem 1rem;
+}
 
-#Skills{
-	background-color: navy;
-	overflow:auto;
+.bio{
+	max-width:30rem;
+	padding:1.5rem 2rem;
+	border-radius:10px;
+	box-shadow:0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+  text-decoration:underline;
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+
+.Skills{
 	max-width:100%;
+	text-align:center;
+	margin:auto;
+	margin-top:2.5rem;
+
 }
 
-.skillHead{
-	background-image:linear-gradient(to bottom, navy, red);
+.skill-wraper{
+	max-width:70%;
+	margin:auto;
+}
+
+.icon{
+	padding:1.5rem;
+	height:10rem;
+	width:9rem;
+	margin:1rem;
+}
+
+.icon-card{
+	background-image:linear-gradient(to bottom right, rgba(255,221,119,1), rgba(255,0,0,0.7));
+	border-radius:7px;
+	padding:1.25rem;
+	box-shadow:0px 3px 10px navy;
+
+}
+
+#contact{
+	max-width:100%;
+	text-align:center;
+	margin-top:4rem;
+}
+
+.form-box>h1{
+	font-size:2rem;
+	text-decoration: underline;
+}
+
+.form-box{
+	max-width:45%;
+	border:1px solid black;
+	margin:auto;
+	border-radius:8px;
+	padding:2rem 1.5rem;
+	box-shadow:0px 3px 10px navy;
+}
+
+.input-field{
+	width:100%;
+	padding:10px 5px;
+	border-radius:5px;
+	border:2px outset var(--primary-color);
+	margin-bottom:1rem;
+}
+
+
+.form-box label{
+	line-height:2rem;
+	font-weight: var(--bold-font);
+	color:var(--primary-color);
+}
+
+.form-control{
+	text-align:left;
+}
+
+#message{
+	height:14rem;
+}
+
+.submit-btn{
+	width:100%;
+	padding:0.5rem;
+	border-radius:5px;
+	border:2px outset var(--primary-color);
+	background-color:var(--primary-color);
+	font-size:1.2rem;
+}
+
+.submit-btn:hover{
+	background-color:navy;
 	color:white;
-	text-align: center;
-	font-size:8vw;
-	font-family:"Sofia",sans-serif;
-}
-
-.cppbox{
-	background-image:linear-gradient(to left, rgba(255,221,119,1),red);
-	font-size:7vw;
-	padding-left:50px;
-	color:black;
-
-}
-
-#cpp{
-	opacity: 0.5;
-}
-
-.dsabox{
-	background-image:linear-gradient(to right, rgba(255,221,119,1), rgba(10,90,234,1));
-	font-size:7vw;
-	text-align: right;
-	padding-right:50px;
-}
-
-#dsa{
-	opacity:0.5;
 }
 
 
-
-.RpFEDbox{
-	color:white;
-	background-image:linear-gradient(to right, navy, rgba(255,221,119,1));
-	font-size:4vw;
-}
-
-#RpFED{
-	width:50%;
-	opacity:0.4;
+.foot{
+	max-width:100%;
+	margin-top:3rem;
+	padding:0.5rem 2rem;
+	text-align:center;
+	box-shadow:0px -4px 10px var(--primary-shadow);
 }
 
 
@@ -213,5 +284,9 @@ svg{
 
 	nav ul.show{
 		transform:translateX(0);
+	}
+
+	.form-box{
+		max-width:80%;
 	}
 }
